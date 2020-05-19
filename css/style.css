@@ -1,0 +1,100 @@
+/*
+=========
+CSS Reset
+=========
+*/
+
+	*,
+	*::before,
+	*::after{
+		box-sizing: border-box;
+	}
+	
+	html, body,
+	div,
+	h1,h2,h3,
+	p, 
+	ul,ol,li,
+	form,
+		label,input,textarea,
+		output,meter,progress,
+		fieldset,legend,
+	button{
+		margin: 0;
+		padding: 0;
+	}
+	
+	li ul,
+	li ol{
+		padding: 0 0 0 2em;
+	}
+	
+	a,button,input[type="button" i],
+	input[type="radio" i],input[type="checkbox" i],
+	select{
+		cursor: pointer;
+	}
+	
+	form,
+	label,
+	input,
+	textarea,
+	output,
+	meter,
+	progress,
+	fieldset,
+	legend,
+	select{
+		display: block;
+		width: 100%;
+		font: inherit;
+	}
+	
+	button{
+		font-family: inherit;
+	}
+	
+	fieldset{
+		border: none;
+	}
+	
+	textarea{
+		resize: vertical;	/*Enable resizing*/
+	}
+	
+	input[type="radio" i],
+	input[type="checkbox" i]{
+		/*
+		Note: 
+		by adding i at the end of the attribute selector 
+		we make it more robust, since it will match in a 
+		case-insensitive way. 
+		For example 
+			input[type="radio" i] 
+		matches 
+			"radio", "Radio", "RADIO", etc.
+		*/
+		display: inline-block;
+		width: auto;
+	}
+
+/*
+=====
+Style
+=====
+*/
+	body{
+		padding: 5em 2em;
+		text-align: center;
+		font-family: monospace;
+	}
+	
+	h1{
+		line-height: 3em;
+	}
+	
+	p{
+		max-width: 30em;
+		margin: 0 auto;
+		line-height: 1.5em;
+	}
